@@ -1,2 +1,1 @@
-# parallaxWebsite
-All info in ReadMe
+# Parallax Scroll Website Project
