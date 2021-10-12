@@ -18,7 +18,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 7px 100px;
+    padding: 5px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,6 @@ header .logo{
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
-    text-transform: uppercase;
     letter-spacing: 2px;
 }
 header ul{
@@ -51,9 +50,10 @@ header ul li a{
 }
 header ul li a:hover{
     background: #fff;
-    color: #E28A64;
+    color: #040c0c;
 }
-header ul li a:active{
+
+header ul li a.active{
     background: #fff;
     color: #040c0c;
 }
@@ -88,9 +88,10 @@ section #gradient{
 }
 section img#tFront{
     z-index:12;
+    top: 20px;
 }
-section img#tback{
-    z-index: 14;
+section img#tBack{
+    z-index: 10;
 }
 section img#ground{
     z-index:20;
@@ -100,7 +101,7 @@ section img#ground{
     color: #fff;
     white-space: nowrap;
     font-size: 80px;
-    z-index: 9;
+    z-index: 11;
 
 }
 .sec{
