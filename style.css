@@ -8,7 +8,7 @@
 }
 body{
     min-height: 100vh;
-    background: linear-gradient(#E28A64,#EFC996);
+    background: #161616;
     overflow-x: hidden;
 }
 
@@ -153,9 +153,28 @@ section img#mFront{
 .sec2 h2{
     font-size: 4em;
     color: white;
+    padding-left: 50px;
+    z-index:1;
 }
 
+.sec2 img{
+    float: left;
+    height: 15%;
+    width: 15%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 30px;
+    opacity: 0.1;
+    transition: opacity 5s;
+    border-radius: 25% 0%;
+}
 
+.sec2 p{
+    
+    font-size: 1.2em;
+    padding: 42px;
+    color: white;
+}
 
 div#blackBox{
     position: relative;

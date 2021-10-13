@@ -10,8 +10,20 @@ let gradient = document.getElementById('gradient');
 let blackbox = document.getElementById('blackBox');
 let element = document.getElementsByClassName('sec');
 let picture = document.getElementById('picture1');
-
+let picture2 = document.getElementById('picture2');
+let debounce2 = false;
 let debounce = false;
+
+class Button{ 
+    constructor(id, className){
+        this.id = id;
+        this.className = className;
+    }
+}
+
+let contactB = new Button(document.getElementById('contacts'),"active");
+let startB = new Button(document.getElementById('home'),"notActive");
+let aboutB = new Button(document.getElementById('about'),"notActive");
 
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
@@ -23,9 +35,53 @@ window.addEventListener('scroll', function(){
     tfront.style.top = value*-0.4+'px';
     blackbox.style.top = value*-0.5+'px';
     birds.style.top = value*-0.1 +'px';
-    if(value>700 && !debounce)
-    {
-        debounce = true;
-        picture.style.opacity = 1;
+    if(value>400 && value<900){
+        if(!debounce){
+            debounce = true;
+            picture.style.opacity = 1;
+        }
+        if(aboutB.id.className!="active"){
+            aboutB.id.className = "active";
+            contactB.id.className = "notActive";
+            startB.id.className = "notActive";
+        }
     }
+    if(value>900 && value<1000 ){    
+        if(!debounce2){
+            debounce2 = true;
+            picture2.style.opacity = 1;
+        }
+        if(contactB.id.className!="active"){
+            startB.id.className = "notActive";
+            contactB.id.className = "active";
+            aboutB.id.className = "notActive";
+        }
+    }
+    if(value>0 && value<400 && startB.id.className!="active" ){
+        startB.id.className = "active";
+        contactB.id.className = "notActive";
+        aboutB.id.className = "notActive";
+    }
+   
+})
+
+aboutB.id.addEventListener('click', function(){
+  
+    aboutB.id.className = "active";
+    contactB.id.className = "notActive";
+    startB.id.className = "notActive";
+  
+})
+startB.id.addEventListener('click', function(){
+  
+    startB.id.className = "active";
+    contactB.id.className = "notActive";
+    aboutB.id.className = "notActive";
+
+})
+contactB.id.addEventListener('click', function(){
+    startB.id.className = "notActive";
+    contactB.id.className = "active";
+    aboutB.id.className = "notActive";
+ 
 })
