@@ -9,6 +9,10 @@ let ground = document.getElementById('ground');
 let gradient = document.getElementById('gradient');
 let blackbox = document.getElementById('blackBox');
 let element = document.getElementsByClassName('sec');
+let picture = document.getElementById('picture1');
+
+let debounce = false;
+
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     ground.style.top = value*-0.5+'px';
@@ -19,5 +23,9 @@ window.addEventListener('scroll', function(){
     tfront.style.top = value*-0.4+'px';
     blackbox.style.top = value*-0.5+'px';
     birds.style.top = value*-0.1 +'px';
-    element.style.height+=value*0.5 + 'px';
+    if(value>700 && !debounce)
+    {
+        debounce = true;
+        picture.style.opacity = 1;
+    }
 })
