@@ -157,7 +157,7 @@ section img#mFront{
     z-index:1;
 }
 
-.sec2 img{
+.sec2 #picture2{
     float: left;
     height: 15%;
     width: 15%;
@@ -173,6 +173,50 @@ section img#mFront{
     
     font-size: 1.2em;
     padding: 42px;
+    color: white;
+}
+
+.sec2 ul li p{
+    padding: 10px;
+    padding-left: 10px;
+}
+
+
+.sec2 ul li{
+    content: "#fb";
+    display: flex;
+    
+}
+
+.sec2 ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fb{
+    width: 40px;
+    height: 40px;
+}
+#twtr{
+    width: 35px;
+    height: 35px;
+}
+#inst{
+    width: 32px;
+    height: 32px;
+}
+
+.sec3{
+    padding-top:50px;
+    padding-bottom:10px;
+    padding-left:10px;
+}
+
+.sec3 a{
+    float: right;
+    font-size: 1.2em;
+    padding-right: 20px;
+    padding-bottom: 20px;
     color: white;
 }
 
@@ -195,3 +239,38 @@ div#blackBox{
     z-index: 8;
     background: #161616;
 } 
+
+.addInfo{
+    margin: 50px;
+}
+
+.addInfo img{
+    display:inline;
+    width: 10%;
+    height: 10%;
+    float: bottom;
+}
+
+.addInfo p{
+    color:white;
+}
+
+.addInfo ul{
+    list-style: none;
+}
+
+.addInfo ul li p{
+    color: transparent;
+    font-weight: bold;
+    background: linear-gradient(45deg, #E28A64,#EFC996);
+    background-clip: text;
+}
+
+.addInfo ul li p::before {
+    content: "\2022";
+    padding-right: 8px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(45deg, #E28A64,#EFC996);
+    background-clip: text;
+  }
