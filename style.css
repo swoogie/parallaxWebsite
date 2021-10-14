@@ -158,7 +158,8 @@ div#blackBox{
     position: relative;
     margin-top: -270px;
     padding: 100px;
-    padding-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 500px;
     background:#161616;
     z-index: 10;
     justify-content: center;
@@ -184,7 +185,7 @@ div#blackBox{
     max-width: 500px;
     min-width: 300px;
     padding: 30px;
-    opacity: 0.1;
+    opacity: 0;
     transition: opacity 5s;
     border-radius: 25% 0%;
 }
@@ -204,12 +205,12 @@ div#blackBox{
 
 .sec2 #picture2{
     float: left;
-    height: 15%;
-    width: 15%;
+    height: 400px;
+    width: 400px;
     max-width: 500px;
     min-width: 300px;
     padding: 30px;
-    opacity: 0.1;
+    opacity: 0;
     transition: opacity 5s;
     border-radius: 25% 0%;
 }
