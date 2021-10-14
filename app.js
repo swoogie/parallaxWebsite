@@ -27,15 +27,15 @@ let aboutB = new Button(document.getElementById('about'),"notActive");
 
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
-    ground.style.top = value*-0.5+'px';
+    ground.style.top = value*-0.7+'px';
     // gradient.style.top =790+(value)+'px';
     // bottomPart.style.top = value+'px';
     mfront.style.top = value*-0.2+'px';
-    tback.style.top = value*-0.3+'px';
-    tfront.style.top = value*-0.4+'px';
-    blackbox.style.top = value*-0.5+'px';
+    tback.style.top = value*-0.4+'px';
+    tfront.style.top = value*-0.5+'px';
+    blackbox.style.top = value*-0.7+'px';
     birds.style.top = value*-0.1 +'px';
-    if(value>400 && value<900){
+    if(value>400 && value<1200){
         if(!debounce){
             debounce = true;
             picture.style.opacity = 1;
@@ -46,7 +46,7 @@ window.addEventListener('scroll', function(){
             startB.id.className = "notActive";
         }
     }
-    if(value>900 && value<1000 ){    
+    if(value>1200 && value<2000){    
         if(!debounce2){
             debounce2 = true;
             picture2.style.opacity = 1;
