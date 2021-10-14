@@ -6,12 +6,12 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+
 body{
     min-height: 100vh;
     background: #161616;
     overflow-x: hidden;
 }
-
 
 header{
     position: fixed;
@@ -25,6 +25,7 @@ header{
     z-index: 99;
     background: #161616;
 }
+
 header .logo{
     color: white;
     font-weight: 700;
@@ -38,6 +39,7 @@ header .logo:hover{
     background: linear-gradient(90deg, #E28A64,#EFC996);
     background-clip: text;
 }
+
 header ul{
     display: flex;
     justify-content: center;
@@ -45,16 +47,19 @@ header ul{
     flex-wrap: wrap;
     
 }
+
 header ul li{
     list-style: none;
     margin-left: 20px;
 }
+
 header ul li a{
     text-decoration: none;
     padding: 6px 15px;
     color: white;
     border-radius: 5px;
 }
+
 header ul li a:hover{
     background: white;
     color: #040c0c;
@@ -112,18 +117,23 @@ section#gradient{
     background: linear-gradient(to top, #161616,transparent);
     z-index: 21;
 }
+
 section img#tFront{
     z-index:14;
 }
+
 section img#tBack{
     z-index: 11;
 }
+
 section img#ground{
     z-index:20;
 }
+
 section img#mFront{
     z-index: 10;
 }
+
 #text{
     position: relative;
     color: white;
@@ -154,11 +164,13 @@ div#blackBox{
     justify-content: center;
     align-items: center;
 }
+
 .sec h2{
     font-size: 4em;
     color: white;
     padding-left: 50px;
 }
+
 .sec p{
     font-size: 1.2em;
     padding: 42px;
@@ -226,14 +238,17 @@ div#blackBox{
     align-items: center;
     justify-content: center;
 }
+
 #fb{
     width: 40px;
     height: 40px;
 }
+
 #twtr{
     width: 35px;
     height: 35px;
 }
+
 #inst{
     width: 32px;
     height: 32px;
@@ -252,8 +267,6 @@ div#blackBox{
     padding-bottom: 20px;
     color: white;
 }
-
-
 
 .addInfo{
     margin: 50px;
