@@ -28,8 +28,6 @@ let aboutB = new Button(document.getElementById('about'),"notActive");
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     ground.style.top = value*-0.7+'px';
-    // gradient.style.top =790+(value)+'px';
-    // bottomPart.style.top = value+'px';
     mfront.style.top = value*-0.2+'px';
     tback.style.top = value*-0.4+'px';
     tfront.style.top = value*-0.5+'px';
